@@ -1,0 +1,47 @@
+---
+title: "Project"
+author: "Junfeng Guo"
+date: "sss"
+output: pdf_document
+---
+
+
+
+
+
+
+
+```{r #1b,,echo=TRUE}
+epoch<-c(1:50)
+plot(epoch, normal.2000, xlab  = 'epoch',ylab  = 'acuuracy',type='l',lty=2,main  = '1000 learn from 500',ylim=c(0.93,1)) 
+lines(epoch, ad.2000, col='red') 
+abline(0.9526,0,col='blue')
+legend('topright',legend=c("normal", "ad",'best_1000','best_500'), col=c("black", "red",'blue','green'), lty=c(2,1,1,1),  cex=0.8) 
+abline(0.9393,0,col='green')
+
+```
+
+
+
+```{r question1}
+epoch<-c(1:50)
+plot(epoch, normal.2825, xlab  = 'epoch',ylab  = 'acuuracy',type='l',lty=2,main  = '2000 learn from 1000',ylim=c(0.95,1)) 
+lines(epoch, ad.2825, col='red') 
+abline(0.9643,0,col='blue')
+legend('topright',legend=c("normal", "ad",'best_2000','best_1000'), col=c("black", "red",'blue','green'), lty=c(2,1,1,1),  cex=0.8) 
+abline(0.9526,0,col='green')
+```
+
+```{r maine}
+epoch<-c(1:50)
+plot(epoch, normal.6300, xlab  = 'epoch',ylab  = 'acuuracy',type='l',lty=2,main  = '6000 learn from 4000',ylim=c(0.97,0.99)) 
+lines(epoch, ad.6300, col='red') 
+abline(0.9845,0,col='blue')
+legend('topright',legend=c("normal", "ad",'best_6000','best_4000'), col=c("black", "red",'blue','green'), lty=c(2,1,1,1),  cex=0.8) 
+abline(0.9799,0,col='green')
+
+```
+
+
+
+
